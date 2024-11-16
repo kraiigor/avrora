@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Avrora</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background-color: #fff;
+    }
+    #app {
+      display: flex;
+      flex-direction: column;
+      height: 100vh;
+    }
+    header {
+      text-align: left;
+      font-size: 24px;
+      padding: 10px;
+      font-weight: bold;
+    }
+    main {
+      flex: 1;
+      padding: 20px;
+    }
+    .title {
+      font-size: 24px;
+      margin-bottom: 20px;
+    }
+    .shops {
+      display: flex;
+      justify-content: space-between;
+    }
+    .shop {
+      text-align: center;
+      orientation: portrait;
+    }
+    .shop img {
+      width: 100px;
+      height: 100px;
+      border-radius: 8px;
+      background-color: black;
+    }
+    .shop h2 {
+      margin: 10px 0;
+      font-size: 18px;
+    }
+    .shop button {
+      margin: 5px 0;
+      width: 120px;
+      padding: 10px;
+      border: none;
+      background-color: black;
+      color: white;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+    .shop button:hover {
+      background-color: #333;
+    }
+    footer {
+      display: flex;
+      justify-content: space-around;
+      padding: 10px 0;
+      border-top: 1px solid #ddd;
+    }
+    footer button {
+      background: none;
+      border: none;
+      font-size: 14px;
+      cursor: pointer;
+      color: gray;
+    }
+    footer button:hover {
+      color: black;
+    }
+  </style>
+</head>
+<body>
+  <div id="app">
+    <header>avrora.</header>
+    <main>
+      <div class="title">Магазины для заказа</div>
+      <div class="shops">
+        <div class="shop">
+          <img src="./images/poizon.png" alt="POIZON">
+          <button>Перейти на сайт</button>
+          <button>Скачать приложение</button>
+        </div>
+        <div class="shop">
+          <img src="./images/end.png" alt="END">
+          <button>Перейти на сайт</button>
+          <button>Скачать приложение</button>
+        </div>
+      </div>
+    </main>
+    <footer>
+      <button>Магазины</button>
+      <button>Подборки</button>
+      <button>Корзина</button>
+      <button>Скидки</button>
+      <button>Заказы</button>
+    </footer>
+  </div>
+</body>
+</html>
